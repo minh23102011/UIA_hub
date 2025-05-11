@@ -8608,16 +8608,16 @@ function Hop()
     end
     v118();
 end
-local v56 = v16.Misc:AddSection("Team");
+local v56 = v16.Misc:AddSection("Đội");
 v16.Misc:AddButton({
-    Title = "Pirate",
+    Title = "Hải Tặc",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam", "Pirates");
     end
 });
 v16.Misc:AddButton({
-    Title = "Marines",
+    Title = "Hải Quân",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam", "Marines");
@@ -8670,7 +8670,7 @@ local v150 = {
     "SECRET_ADMIN"
 };
 v16.Misc:AddButton({
-    Title = "Redeem all code",
+    Title = "Nhập Hết",
     Description = "",
     Callback = function()
         for v559, v560 in ipairs(v150) do
@@ -8683,7 +8683,7 @@ function RedeemCode(v377)
 end
 local v56 = v16.Misc:AddSection("Danh Hiệu");
 v16.Misc:AddButton({
-    Title = "Title",
+    Title = "Danh Hiệu",
     Description = "",
     Callback = function()
         local v378 = {
@@ -8693,9 +8693,9 @@ v16.Misc:AddButton({
         game.Players.localPlayer.PlayerGui.Main.Titles.Visible = true;
     end
 });
-local v56 = v16.Misc:AddSection("Awakening");
+local v56 = v16.Misc:AddSection("Thức Tỉnh");
 v16.Misc:AddButton({
-    Title = "Awakening",
+    Title = "Thức Tỉnh",
     Description = "",
     Callback = function()
         game:GetService("Players").LocalPlayer.PlayerGui.Main.AwakeningToggler.Visible = true;
@@ -8703,7 +8703,7 @@ v16.Misc:AddButton({
 });
 local v56 = v16.Misc:AddSection("Miscellaneous");
 local v151 = v16.Misc:AddToggle("ToggleRejoin", {
-    Title = "Rejoin sever",
+    Title = "Tham Gia Server Lại",
     Description = "",
     Default = true
 });
@@ -8722,7 +8722,7 @@ spawn(function()
         end
     end
 end);
-local v56 = v16.Misc:AddSection("fog");
+local v56 = v16.Misc:AddSection("Sương");
 local function v152()
     local v382 = game:GetService("Lighting");
     if v382:FindFirstChild("BaseAtmosphere") then
@@ -8743,14 +8743,14 @@ local function v152()
     v382.FogEnd = 100000;
 end
 v16.Misc:AddButton({
-    Title = "No fog",
+    Title = "Xóa Sương Mù",
     Description = "",
     Callback = function()
         v152();
     end
 });
 local v153 = v16.Misc:AddToggle("ToggleAntiBand", {
-    Title = "Anti ban",
+    Title = "Chống Band",
     Description = "",
     Default = true
 });
@@ -8775,14 +8775,14 @@ spawn(function()
 end);
 local v56 = v16.Sea:AddSection("Leviathan");
 v16.Sea:AddButton({
-    Title = "Auto buy Leviathan chip",
+    Title = "Mua Chip Leviathan",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("InfoLeviathan", "2");
     end
 });
 local v155 = v16.Sea:AddToggle("ToggleTPFrozenDimension", {
-    Title = "Twee to leviathan island",
+    Title = "Bay Đến Đảo Leviathan",
     Description = "",
     Default = false
 });
@@ -8968,7 +8968,7 @@ spawn(function()
     end
 end);
 v156:AddButton({
-    Title = "Tween to Dragon Dojo",
+    Title = "Bay Đến Khu Vực Dragon Dojo",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(5661.5322265625, 1013.0907592773438, - 334.9649963378906));
@@ -8976,7 +8976,7 @@ v156:AddButton({
     end
 });
 v156:AddButton({
-    Title = "Craft Volcanic Magnet",
+    Title = "Chế Tạo Volcanic Magnet",
     Description = "",
     Callback = function()
         local v395 = {
@@ -8988,7 +8988,7 @@ v156:AddButton({
     end
 });
 local v164 = v16.Sea:AddToggle("ToggleCollectFireFlowers", {
-    Title = "Auto v2 Draco",
+    Title = "Lụm Hoa Đỏ",
     Description = "",
     Default = false
 });
@@ -9019,7 +9019,7 @@ spawn(function()
     end
 end);
 local v165 = v16.Sea:AddToggle("ToggleWhiteBelt", {
-    Title = "Auto white belt",
+    Title = "Grind Đai Trắng",
     Description = "",
     Default = false
 });
@@ -9048,11 +9048,11 @@ v165:OnChanged(function(v397)
     end
 end);
 local v166 = v16.Sea:AddParagraph({
-    Title = "Auto trial Draco V4 (Coming soon)",
+    Title = "Hoàn Thành Ải Draco V4 (Sớm Ra)",
     Content = ""
 });
 local v167 = v16.Sea:AddToggle("ToggleTrialTeleport", {
-    Title = "Tween to trial Race Draco",
+    Title = "Bay Đến Cửa Trial Race Draco",
     Description = "",
     Default = false
 });
@@ -9115,7 +9115,7 @@ spawn(function()
     end
 end);
 local v171 = v16.Sea:AddToggle("ToggleDefendVolcano", {
-    Title = "Defend",
+    Title = "Phòng Thủ",
     Description = "",
     Default = false
 });
@@ -9123,7 +9123,7 @@ v171:OnChanged(function(v401)
     _G.AutoDefendVolcano = v401;
 end);
 local v107 = v16.Sea:AddToggle("ToggleMelee", {
-    Title = "Use Melee",
+    Title = "Dùng Melee",
     Description = "",
     Default = false
 });
@@ -9131,7 +9131,7 @@ v107:OnChanged(function(v402)
     _G.UseMelee = v402;
 end);
 local v109 = v16.Sea:AddToggle("ToggleSword", {
-    Title = "Use sword",
+    Title = "Dùng Sword",
     Description = "",
     Default = false
 });
@@ -9139,7 +9139,7 @@ v109:OnChanged(function(v403)
     _G.UseSword = v403;
 end);
 local v110 = v16.Sea:AddToggle("ToggleGun", {
-    Title = "Use Gun",
+    Title = "Dùng Gun",
     Description = "",
     Default = false
 });
@@ -9249,7 +9249,7 @@ spawn(function()
     end
 end);
 local v175 = v16.Sea:AddToggle("ToggleKillAura", {
-    Title = "Auto kill Golems",
+    Title = "Đấm Golems Aura",
     Description = "",
     Default = false
 });
@@ -9276,7 +9276,7 @@ spawn(function()
     end
 end);
 local v176 = v16.Sea:AddToggle("ToggleCollectBone", {
-    Title = "Auto collect dragon bone",
+    Title = "Lụm Xương",
     Description = "",
     Default = false
 });
@@ -9295,7 +9295,7 @@ spawn(function()
     end
 end);
 local v177 = v16.Sea:AddToggle("ToggleCollectEgg", {
-    Title = "Auto collect dragon egg",
+    Title = "Lụm Trứng",
     Description = "",
     Default = false
 });
@@ -9324,7 +9324,7 @@ spawn(function()
     end
 end);
 v14:Notify({
-    Title = "UIA hub",
+    Title = "Nghĩa Roblox",
     Content = "Finished",
     Duration = 10
 });
