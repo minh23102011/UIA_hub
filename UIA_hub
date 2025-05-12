@@ -8084,7 +8084,7 @@ v16.Race:AddButton({
     end
 });
 local v144 = v16.Race:AddToggle("ToggleHumanandghoul", {
-    Title = "Finish trial [Human/Ghoul]",
+    Title = "Auto trial [Human/Ghoul]",
     Description = "",
     Default = false
 });
@@ -8093,7 +8093,7 @@ v144:OnChanged(function(v361)
 end);
 v17.ToggleHumanandghoul:SetValue(false);
 local v145 = v16.Race:AddToggle("ToggleAutotrial", {
-    Title = "Finish trial",
+    Title = "Auto trial",
     Description = "",
     Default = false
 });
