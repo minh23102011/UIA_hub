@@ -8623,7 +8623,7 @@ v16.Misc:AddButton({
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam", "Marines");
     end
 });
-local v56 = v16.Misc:AddSection("Kinh Nghiệm");
+local v56 = v16.Misc:AddSection("Code");
 local v150 = {
     "KITT_RESET",
     "Sub2UncleKizaru",
