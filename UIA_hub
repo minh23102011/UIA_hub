@@ -104,7 +104,7 @@ v4(25, v7);
 local v8 = CreateObject("TextLabel", {
     Name = "UserName",
     Parent = v6,
-    BackgroundTransparency = 1,
+    BackgroundTransparency = 0,
     Text = "UIA hub",
     Position = UDim2.new(0, 75, 0, 10),
     Size = UDim2.new(0, 200, 0, 50),
@@ -319,7 +319,7 @@ local v15 = v14:CreateWindow({
     Theme = "Dark",
     Acrylic = false,
     Size = UDim2.fromOffset(500, 320),
-    MinimizeKey = Enum.KeyCode.End
+    MinimizeKey = Enum.KeyCode.P
 });
 local v16 = {
     Home = v15:AddTab({
@@ -8623,7 +8623,7 @@ v16.Misc:AddButton({
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam", "Marines");
     end
 });
-local v56 = v16.Misc:AddSection("Code");
+local v56 = v16.Misc:AddSection("Kinh Nghiệm");
 local v150 = {
     "KITT_RESET",
     "Sub2UncleKizaru",
