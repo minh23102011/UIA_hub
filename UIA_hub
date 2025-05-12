@@ -1,7 +1,7 @@
 
 
 
-shared.LoaderTitle = "UIA hub";
+shared.LoaderTitle = "Đăng Ký Kênh Nghĩa Roblox";
 shared.LoaderKeyFrames = {
     [1] = {
         1,
@@ -3458,7 +3458,7 @@ if Sea2 then
         end
     end);
 end
-local v60 = v16.Main:AddSection("Boss");
+local v60 = v16.Main:AddSection("Trùm");
 if Sea1 then
     tableBoss = {
         "The Gorilla King",
@@ -3551,7 +3551,7 @@ spawn(function()
         end
     end
 end);
-local v63 = v16.Main:AddSection("Material");
+local v63 = v16.Main:AddSection("Nguyên Liệu");
 if Sea1 then
     MaterialList = {
         "Scrap Metal",
@@ -3651,16 +3651,16 @@ spawn(function()
     end
 end);
 if Sea3 then
-    local v498 = v16.Sea:AddSection("Island Cáo");
+    local v498 = v16.Sea:AddSection("Đảo Cáo");
     local v499 = v16.Sea:AddParagraph({
         Title = "Kitsune island",
         Content = ""
     });
     function UpdateKitsune()
         if game:GetService("Workspace").Map:FindFirstChild("KitsuneIsland") then
-            v499:SetDesc("Island Cáo : ✅️");
+            v499:SetDesc("Đảo Cáo : ✅️");
         else
-            v499:SetDesc("Island Cáo : ❌️");
+            v499:SetDesc("Đảo Cáo : ❌️");
         end
     end
     spawn(function()
@@ -3671,7 +3671,7 @@ if Sea3 then
         end);
     end);
     local v500 = v16.Sea:AddToggle("ToggleEspKitsune", {
-        Title = "Esp kitsune island",
+        Title = "ESP kitsune island",
         Description = "",
         Default = false
     });
@@ -3715,7 +3715,7 @@ if Sea3 then
         end
     end
     local v501 = v16.Sea:AddToggle("ToggleTPKitsune", {
-        Title = "Tween to kitsune island",
+        Title = "Tween to Kitsune Island",
         Description = "",
         Default = false
     });
@@ -4625,7 +4625,7 @@ if Sea3 then
     end);
 end
 if Sea3 then
-    local v531 = v16.Sea:AddSection("Island Bí Ẩn");
+    local v531 = v16.Sea:AddSection("Đảo Bí Ẩn");
     local v532 = v16.Sea:AddParagraph({
         Title = "Status",
         Content = ""
@@ -4664,7 +4664,7 @@ if Sea3 then
     spawn(function()
         pcall(function()
             while wait() do
-                v532:SetDesc("Island Bí Ẩn: " .. MirageStatus .. " | Trăng Tròn: " .. FullMoonStatus);
+                v532:SetDesc("Đảo Bí Ẩn: " .. MirageStatus .. " | Trăng Tròn: " .. FullMoonStatus);
             end
         end);
     end);
@@ -6465,7 +6465,7 @@ v92:OnChanged(function(v279)
     end
 end);
 v17.ToggleWhite:SetValue(false);
-local v93 = v16.Setting:AddSection("Skill use to farm, sea event, ...");
+local v93 = v16.Setting:AddSection("Kĩ Năng Thông Thạo");
 local v94 = v16.Setting:AddToggle("ToggleZ", {
     Title = "Z skill",
     Description = "",
@@ -6513,7 +6513,7 @@ end);
 v17.ToggleF:SetValue(true);
 local v99 = v16.Status:AddParagraph({
     Title = "Inform",
-    Content = "━━━━━━━━━━━━━━━━━━━━━\n" .. "Name : " .. game.Players.LocalPlayer.DisplayName .. " (@" .. game.Players.LocalPlayer.Name .. ")\n" .. "Lv : " .. game:GetService("Players").LocalPlayer.Data.Level.Value .. "\n" .. "Beli : " .. game:GetService("Players").LocalPlayer.Data.Beli.Value .. "\n" .. "Fragments : " .. game:GetService("Players").LocalPlayer.Data.Fragments.Value .. "\n" .. "Bounty : " .. game:GetService("Players").LocalPlayer.leaderstats["Bounty/Honor"].Value .. "\n" .. "Health: " .. game.Players.LocalPlayer.Character.Humanoid.Health .. "/" .. game.Players.LocalPlayer.Character.Humanoid.MaxHealth .. "\n" .. "Mana : " .. game.Players.LocalPlayer.Character.Energy.Value .. "/" .. game.Players.LocalPlayer.Character.Energy.MaxValue .. "\n" .. "Race : " .. game:GetService("Players").LocalPlayer.Data.Race.Value .. "\n" .. "Fruit : " .. game:GetService("Players").LocalPlayer.Data.DevilFruit.Value .. "\n" .. "━━━━━━━━━━━━━━━━━━━━━"
+    Content = "━━━━━━━━━━━━━━━━━━━━━\n" .. "Tên : " .. game.Players.LocalPlayer.DisplayName .. " (@" .. game.Players.LocalPlayer.Name .. ")\n" .. "Cấp : " .. game:GetService("Players").LocalPlayer.Data.Level.Value .. "\n" .. "Tiền : " .. game:GetService("Players").LocalPlayer.Data.Beli.Value .. "\n" .. "Điểm F : " .. game:GetService("Players").LocalPlayer.Data.Fragments.Value .. "\n" .. "Tiền Truy Nã : " .. game:GetService("Players").LocalPlayer.leaderstats["Bounty/Honor"].Value .. "\n" .. "Máu: " .. game.Players.LocalPlayer.Character.Humanoid.Health .. "/" .. game.Players.LocalPlayer.Character.Humanoid.MaxHealth .. "\n" .. "Năng Lượng : " .. game.Players.LocalPlayer.Character.Energy.Value .. "/" .. game.Players.LocalPlayer.Character.Energy.MaxValue .. "\n" .. "Tộc : " .. game:GetService("Players").LocalPlayer.Data.Race.Value .. "\n" .. "Trái : " .. game:GetService("Players").LocalPlayer.Data.DevilFruit.Value .. "\n" .. "━━━━━━━━━━━━━━━━━━━━━"
 });
 local v100 = v16.Status:AddParagraph({
     Title = "Time",
@@ -6769,7 +6769,7 @@ spawn(function()
         end
     end
 end);
-local v56 = v16.Player:AddSection("Other");
+local v56 = v16.Player:AddSection("Khác");
 local v115 = v16.Player:AddToggle("ToggleNoClip", {
     Title = " Walk through walls ",
     Description = "",
@@ -6832,7 +6832,7 @@ spawn(function()
         end
     end);
 end);
-local v118 = v16.Teleport:AddSection("Sea");
+local v118 = v16.Teleport:AddSection("Thế Giới");
 local v119 = v16.Teleport:AddToggle("ToggleAutoSea2", {
     Title = "Auto sea 2 quest",
     Description = "",
@@ -6968,7 +6968,7 @@ v16.Teleport:AddButton({
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelZou");
     end
 });
-local v56 = v16.Teleport:AddSection("Island");
+local v56 = v16.Teleport:AddSection("Đảo");
 if Sea1 then
     IslandList = {
         "WindMill",
@@ -7489,7 +7489,7 @@ spawn(function()
         end
     end
 end);
-local v56 = v16.Fruit:AddSection("Esp");
+local v56 = v16.Fruit:AddSection("Định Vị");
 local v130 = v16.Fruit:AddToggle("ToggleEspPlayer", {
     Title = "Player",
     Description = "",
@@ -7984,7 +7984,7 @@ elseif Sea3 then
         end
     });
 end
-local v56 = v16.Raid:AddSection("Raid Law");
+local v56 = v16.Raid:AddSection("Tập Kích Law");
 local v143 = v16.Raid:AddToggle("ToggleLaw", {
     Title = "Auto law boss – buy chip and kill",
     Description = "",
@@ -8062,7 +8062,7 @@ v16.Race:AddButton({
         Tween2(CFrame.new(28981.552734375, 14888.4267578125, - 120.245849609375));
     end
 });
-local v56 = v16.Race:AddSection("Race");
+local v56 = v16.Race:AddSection("Tộc");
 v16.Race:AddButton({
     Title = "Race door",
     Description = "",
@@ -8250,7 +8250,7 @@ spawn(function()
         end);
     end
 end);
-local v56 = v16.Race:AddSection("Train (v4)");
+local v56 = v16.Race:AddSection("Huấn Luyện");
 local v147 = v16.Race:AddToggle("ToggleFarmRace", {
     Title = "Auto train – race v4",
     Description = "",
@@ -8294,7 +8294,7 @@ v149:OnChanged(function(v365)
     end
 end);
 v17.ToggleUpgrade:SetValue(false);
-local v56 = v16.Shop:AddSection("Skill");
+local v56 = v16.Shop:AddSection("Khả Năng");
 v16.Shop:AddButton({
     Title = "Air jump",
     Description = "",
@@ -8323,7 +8323,7 @@ v16.Shop:AddButton({
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("KenTalk", "Buy");
     end
 });
-local v56 = v16.Shop:AddSection("Sword");
+local v56 = v16.Shop:AddSection("Kiếm");
 v16.Shop:AddButton({
     Title = "Cutlass",
     Description = "",
@@ -8474,7 +8474,7 @@ v16.Shop:AddButton({
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySanguineArt");
     end
 });
-local v56 = v16.Shop:AddSection("Other");
+local v56 = v16.Shop:AddSection("Khác");
 v16.Shop:AddButton({
     Title = "Reset stats",
     Description = "",
@@ -8701,7 +8701,7 @@ v16.Misc:AddButton({
         game:GetService("Players").LocalPlayer.PlayerGui.Main.AwakeningToggler.Visible = true;
     end
 });
-local v56 = v16.Misc:AddSection("Other");
+local v56 = v16.Misc:AddSection("Khác");
 local v151 = v16.Misc:AddToggle("ToggleRejoin", {
     Title = "Rejoin sever",
     Description = "",
@@ -9069,7 +9069,7 @@ spawn(function()
         end
     end
 end);
-local v168 = v16.Sea:AddSection("Island Dung Nham");
+local v168 = v16.Sea:AddSection("Đảo Dung Nham");
 local v169 = v16.Sea:AddParagraph({
     Title = "Status Prehistoric Island ",
     Content = ""
