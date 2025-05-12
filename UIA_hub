@@ -104,7 +104,7 @@ v4(25, v7);
 local v8 = CreateObject("TextLabel", {
     Name = "UserName",
     Parent = v6,
-    BackgroundTransparency = 0,
+    BackgroundTransparency = 1,
     Text = "UIA hub",
     Position = UDim2.new(0, 75, 0, 10),
     Size = UDim2.new(0, 200, 0, 50),
@@ -319,7 +319,7 @@ local v15 = v14:CreateWindow({
     Theme = "Dark",
     Acrylic = false,
     Size = UDim2.fromOffset(500, 320),
-    MinimizeKey = Enum.KeyCode.P
+    MinimizeKey = Enum.KeyCode.End
 });
 local v16 = {
     Home = v15:AddTab({
@@ -8623,7 +8623,7 @@ v16.Misc:AddButton({
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam", "Marines");
     end
 });
-local v56 = v16.Misc:AddSection("Kinh Nghiệm");
+local v56 = v16.Misc:AddSection("Code");
 local v150 = {
     "KITT_RESET",
     "Sub2UncleKizaru",
@@ -9069,7 +9069,7 @@ spawn(function()
         end
     end
 end);
-local v168 = v16.Sea:AddSection("Island Dung Nham");
+local v168 = v16.Sea:AddSection("Prehistoric Island ");
 local v169 = v16.Sea:AddParagraph({
     Title = "Status Prehistoric Island ",
     Content = ""
