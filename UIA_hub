@@ -8394,7 +8394,7 @@ v16.Shop:AddButton({
         game.ReplicatedStorage.Remotes.CommF_:InvokeServer("ThunderGodTalk");
     end
 });
-local v56 = v16.Shop:AddSection("Võ");
+local v56 = v16.Shop:AddSection("Melee");
 v16.Shop:AddButton({
     Title = "Black Leg",
     Description = "",
